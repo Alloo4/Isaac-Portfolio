@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting Services | Isaak S. Hayes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1A1A2E;
+      color: #fff;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #0D0D1A;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x900/?leadership,consulting');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 3px solid #FFD700;
+    }
+
+    .hero .cta {
+      margin-top: 30px;
+    }
+
+    .hero button {
+      background-color: #FFD700;
+      color: #1A1A2E;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+
+    /* Consulting Services Section */
+    .services {
+      background-color: #2E2E48;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .services .service-item {
+      background-color: #3E3E5C;
+      padding: 20px;
+      margin: 20px;
+      display: inline-block;
+      width: 300px;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .services img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .services h3 {
+      font-size: 24px;
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .services button {
+      background-color: #FFD700;
+      color: #1A1A2E;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #1A1A2E;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .testimonial {
+      background-color: #2E2E48;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 600px;
+      text-align: left;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 15px;
+    }
+
+    .testimonial p {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .testimonial .name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background-color: #3E3E5C;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cta-section a {
+      background-color: #FFD700;
+      color: #1A1A2E;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    /* Blog Links Section */
+    .blog-links {
+      margin-top: 20px;
+    }
+
+    .blog-links ul {
+      list-style-type: none; /* Removes the bullet points */
+      padding: 0;
+    }
+
+    .blog-links li {
+      margin-bottom: 10px; /* Adds space between blog links */
+    }
+
+    .blog-link {
+      background-color: #FFD700;
+      color: #1A1A2E;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .blog-link:hover {
+      background-color: #FFC300;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0D0D1A;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Consulting</a>
+    <a href="#">Investments</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="https://via.placeholder.com/120" alt="Isaak Hayes Headshot"> <!-- Headshot Placeholder -->
+    <h1>Unlock Innovation, Growth, and Strategy for Your Business</h1>
+    <p>Expert consulting services to guide your business through challenges and help you scale.</p>
+    <div class="cta">
+      <button>Book a Free 15-Min Consultation</button>
+      <button>Learn More</button>
+    </div>
+  </div>
+
+  <!-- Consulting Services Section -->
+  <div class="services">
+    <h2>Consulting Offerings</h2>
+
+    <div class="service-item">
+      <img src="https://via.placeholder.com/300x150" alt="Strategy Session Image"> <!-- Image Placeholder -->
+      <h3>45-Minute Strategy Session</h3>
+      <p>A personalized session designed to assess your business needs and provide actionable strategies.</p>
+      <button>Schedule Now</button>
+    </div>
+
+    <div class="service-item">
+      <img src="https://via.placeholder.com/300x150" alt="Ongoing Advisory Image"> <!-- Image Placeholder -->
+      <h3>Ongoing Consulting & Advisory</h3>
+      <p>Long-term advisory services for companies seeking sustained growth and leadership support.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="service-item">
+      <img src="https://via.placeholder.com/300x150" alt="Product Development Image"> <!-- Image Placeholder -->
+      <h3>Product Development Consulting</h3>
+      <p>Expert guidance on product design, development, and launch strategies for businesses.</p>
+      <button>Request a Consultation</button>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="testimonials">
+    <h2>Client Success Stories</h2>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/50" alt="Client Photo"> <!-- Image Placeholder -->
+      <p>"Isaak’s leadership and strategy helped us scale our product from concept to market launch, significantly improving our customer engagement."</p>
+      <p class="name">John Doe, CEO of InnovateTech</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://via.placeholder.com/50" alt="Client Photo"> <!-- Image Placeholder -->
+      <p>"Isaak’s expertise in UX design and product management was instrumental in driving our product to success. We couldn’t have done it without him!"</p>
+      <p class="name">Jane Smith, Product Lead at DesignX</p>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="cta-section">
+    <h2>Ready to Take Your Business to the Next Level?</h2>
+    <a href="#">Book a Free 15-Min Consultation</a>
+    <a href="#">Explore My Insights</a>
+
+    <!-- Blog Links Section -->
+    <div class="blog-links">
+      <h3>Relevant Blog Posts:</h3>
+      <ul>
+        <li><a href="#" class="blog-link">How to Scale Your Tech Startup</a></li>
+        <li><a href="#" class="blog-link">Design Excellence for Impactful Products</a></li>
+        <li><a href="#" class="blog-link">Leveraging AI to Streamline Operations</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Let's stay connected</p>
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Medium</a>
+  </footer>
+
+</body>
+</html>
